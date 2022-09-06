@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_plugin1"
+version = "1.0"
+description = "description of project1"
+
+[project.entry-points."stevedore_testplugins.database"]
+my_plugin1 = "plugin1:myfunc1"
